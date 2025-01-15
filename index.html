@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ministério de Intercessão - Filhos da Luz</title>
+    <style>
+        :root {
+            --primary-color: #3f51b5;
+            --secondary-color: #f1f1f1;
+            --text-color: #333;
+            --accent-color: #ff9800;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            background-color: var(--primary-color);
+            overflow: hidden;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            transition: background 0.3s;
+        }
+
+        .nav-links a:hover {
+            background-color: var(--accent-color);
+        }
+
+        .menu-toggle {
+            display: none;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            background: none;
+            border: none;
+            font-size: 24px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .menu-toggle:focus {
+            outline: none;
+        }
+
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                text-align: center;
+                width: 100%;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links a {
+                padding: 10px;
+            }
+        }
+
+        section {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .card {
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .card h2 {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px;
+            margin: 0;
+        }
+
+        .card div {
+            padding: 15px;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Ministério de Intercessão - Filhos da Luz</h1>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    </header>
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#welcome">Início</a></li>
+            <li><a href="registros.html">Registros</a></li>
+        </ul>
+    </nav>
+
+    <section id="welcome">
+        <div class="card">
+            <h2>Bem-vindo(a)!</h2>
+            <div>
+                <p>Seja bem-vindo(a) ao site do Ministério de Intercessão - Filhos da Luz. Aqui você encontrará informações importantes, materiais de formação e registros do nosso grupo.</p>
+                <p><strong>"Onde dois ou três estiverem reunidos em meu nome, ali estou eu no meio deles."</strong> (Mt 18,20)</p>
+                <p><a href="registros.html" style="color: var(--primary-color); text-decoration: underline;">Acesse os registros dos encontros aqui</a>.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="schedule">
+        <div class="card">
+            <h2>Agenda</h2>
+            <div>
+                <ul>
+                    <li>Intercessão Profética: Terças-feiras, às 18h, na Igreja Matriz de Bom Lugar.</li>
+					<li>Grupo de Oração - Sábados, às 19h</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="resources">
+        <div class="card">
+            <h2>Materiais</h2>
+            <div>
+                <ul>
+                    <li><a href="#">Guia para Intercessores (PDF)</a></li>
+                    <li><a href="#">Roteiros de Oração (PDF)</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Ministério de Intercessão - Filhos da Luz. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
