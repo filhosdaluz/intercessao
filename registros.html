@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agenda - Ministério de Intercessão Filhos da Luz</title>
+    <title>Ministério de Intercessão - Filhos da Luz</title>
     <style>
         :root {
             --primary-color: #3f51b5;
@@ -56,6 +56,43 @@
             background-color: var(--accent-color);
         }
 
+        .menu-toggle {
+            display: none;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            background: none;
+            border: none;
+            font-size: 24px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .menu-toggle:focus {
+            outline: none;
+        }
+
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                text-align: center;
+                width: 100%;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links a {
+                padding: 10px;
+            }
+        }
+
         section {
             padding: 20px;
             max-width: 900px;
@@ -88,13 +125,13 @@
             padding: 10px 0;
         }
 
-        .agenda-list {
+        .records-list {
             list-style: none;
             padding: 0;
             margin: 0;
         }
 
-        .agenda-item {
+        .record-item {
             background-color: white;
             padding: 15px;
             margin-bottom: 15px;
@@ -102,19 +139,26 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
-        .agenda-date {
+        .record-date {
             font-weight: bold;
             color: var(--primary-color);
         }
 
-        .agenda-description {
+        .record-description {
             margin-top: 10px;
         }
     </style>
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
 </head>
 <body>
     <header>
-        <h1>Agenda de Intercessão Ministério <br>Go Filhos da Luz</h1>
+        <h1>Ministério de Intercessão <br>GO Filhos da Luz</h1>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
     </header>
 
     <nav>
