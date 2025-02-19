@@ -6,10 +6,10 @@
     <title>Ministério de Intercessão Filhos da Luz</title>
     <style>
         :root {
-            --primary-color: #3f51b5;
+            --primary-color: #006400; /* Verde escuro (esperança, renovação, missão do intercessor) */
             --secondary-color: #f1f1f1;
             --text-color: #333;
-            --accent-color: #ff9800;
+            --accent-color: #FFD700; /* Dourado (glória de Deus, luz divina) */
         }
 
         body {
@@ -23,37 +23,19 @@
             background-color: var(--primary-color);
             color: white;
             padding: 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-        }
-
-        nav {
-            background-color: var(--primary-color);
-            overflow: hidden;
-        }
-
-        .nav-links {
             display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            list-style: none;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            height: 70px;
+        }
+
+        .title {
+            flex-grow: 1;
+            text-align: center;
             margin: 0;
-            padding: 0;
-        }
-
-        .nav-links a {
-            display: block;
-            color: white;
-            text-decoration: none;
-            padding: 14px 20px;
-            transition: background 0.3s;
-        }
-
-        .nav-links a:hover {
-            background-color: var(--accent-color);
         }
 
         section {
@@ -88,52 +70,9 @@
             padding: 10px 0;
         }
 
-        .agenda-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .agenda-item {
-            background-color: white;
-            padding: 15px;
-            margin-bottom: 15px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .agenda-date {
-            font-weight: bold;
-            color: var(--primary-color);
-        }
-
-        .agenda-description {
-            margin-top: 10px;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Ministério de Intercessão <br>Go Filhos da Luz</h1>
-    </header>
-
-    <section id="welcome">
-        <div class="card">
-            <h2>Bem-vindo(a)!</h2>
-            <div>
-                <p>Seja bem-vindo(a) ao site do Ministério de Intercessão GO Filhos da Luz. Aqui você encontrará informações importantes, materiais de formação e registros do nosso grupo.</p>
-                <p><strong>"Procurei entre eles um homem que erguesse o muro e se pusesse na brecha diante de mim em favor desta terra, para que eu não a destruísse, mas não encontrei nenhum."</strong> Ezequiel 22,30</p>
-                <h3>Intercessão Profética</h3>
-                <p><a href="registros.html" class="btn">Acesse aqui</a>.</p>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Estilo do botão -->
-    <style>
         .btn {
             display: inline-block;
-            background-color: #3f51b5;
+            background-color: var(--primary-color);
             color: white;
             text-decoration: none;
             padding: 12px 20px;
@@ -142,24 +81,51 @@
             margin-top: 20px;
             transition: background-color 0.3s;
         }
-    
+
         .btn:hover {
-            background-color: #ff9800;
+            background-color: var(--accent-color);
+            color: var(--primary-color);
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            .logo {
+                margin-bottom: 10px;
+            }
         }
     </style>
-    
-    
+</head>
+<body>
+    <header>
+        <img src="Img/transferir.jpg" alt="Logo Ministério" class="logo">
+        <h1 class="title">Ministério de Intercessão <br>GO Filhos da Luz</h1>
+    </header>
+
+    <section id="welcome">
+        <div class="card">
+            <h2>Bem-vindo(a)!</h2>
+            <div>
+                <p>Seja bem-vindo(a) ao site do Ministério de Intercessão Filhos da Luz. Aqui você encontrará informações importantes, materiais de formação e registros do nosso grupo.</p>
+                <p><strong>"Procurei entre eles um homem que erguesse o muro e se pusesse na brecha diante de mim em favor desta terra, para que eu não a destruísse, mas não encontrei nenhum."</strong> Ezequiel 22,30</p>
+                <h3>Intercessão Profética</h3>
+                <p><a href="registros.html" class="btn">Acesse aqui</a>.</p>
+            </div>
+        </div>
+    </section>
 
     <section id="resources">
         <div class="card">
             <h2>Materiais</h2>
             <div>
-                <ul>
-                   
-                </ul>
+                <h3>Formação de Intercessão</h3>
+                <p><a href="https://drive.google.com/drive/folders/1lpNvH_AzqBBuy2kPwr3AK5-yKlPgn5y6?usp=sharing" class="btn">Acesse aqui</a>.</p>
             </div>
         </div>
     </section>
+    
 
     <footer>
         <p>&copy; 2025 Ministério de Intercessão - Filhos da Luz. Todos os direitos reservados.</p>
