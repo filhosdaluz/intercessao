@@ -6,10 +6,10 @@
     <title>Ministério de Intercessão - Filhos da Luz</title>
     <style>
         :root {
-            --primary-color: #3f51b5;
-            --secondary-color: #f1f1f1;
-            --text-color: #333;
-            --accent-color: #ff9800;
+            --primary-color: #006400;  /* Cor principal (verde escuro) */
+            --secondary-color: #f1f1f1; /* Cor de fundo (cinza claro) */
+            --text-color: #333;         /* Cor do texto (cinza escuro) */
+            --accent-color: #FFD700;    /* Cor de destaque (dourado) */
         }
 
         body {
@@ -17,22 +17,38 @@
             font-family: Arial, sans-serif;
             background-color: var(--secondary-color);
             color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         header {
             background-color: var(--primary-color);
             color: white;
             padding: 20px;
-            text-align: center;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
         }
 
         header h1 {
             margin: 0;
+            font-size: 2em;
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        .logo {
+            height: 70px;
+            margin-right: 20px;
         }
 
         nav {
             background-color: var(--primary-color);
             overflow: hidden;
+            width: 100%;
         }
 
         .nav-links {
@@ -96,7 +112,7 @@
         section {
             padding: 20px;
             max-width: 900px;
-            margin: auto;
+            margin: 20px;
         }
 
         .card {
@@ -123,6 +139,7 @@
             color: white;
             text-align: center;
             padding: 10px 0;
+            width: 100%;
         }
 
         .records-list {
@@ -147,6 +164,10 @@
         .record-description {
             margin-top: 10px;
         }
+
+        .record-list {
+            padding-left: 20px;
+        }
     </style>
     <script>
         function toggleMenu() {
@@ -157,384 +178,375 @@
 </head>
 <body>
     <header>
+        <a href="index.html">
+        <img src="Img/transferir.jpg" alt="Logo Ministério" class="logo">
+        </a>
         <h1>Ministério de Intercessão <br>GO Filhos da Luz</h1>
         <button class="menu-toggle" onclick="toggleMenu()">☰</button>
     </header>
-
-    <nav>
-        <ul class="nav-links">
-            <li><a href="index.html">Início</a></li>
-        </ul>
-    </nav>
 
     <section id="records">
         <div class="card">
             <h2>Registros dos Encontros</h2>
             <div>
                 <p>Acompanhe os registros dos nossos encontros aqui. Cada reunião é documentada com a data e as intenções compartilhadas.</p>
-		 <ul class="records-list">
-		    <p class="record-date">18 de fevereiro de 2025</p>
-		    <p class="record-description">Condutor: Gabriel</p>
-		
-		    <p>Pelo que rezar:</p>
-		    <ul class="record-list">
-		        <li>Visualização: fogo do Espírito Santo que não consegue entrar</li>
-		        <li>João 15 (A videira)</li>
-		        <li>Mateus 24, 35</li>
-		        <li>Santidade</li>
-		    </ul>
-		
-		    <p>Discernimento:</p>
-		    <ul class="record-list">
-		        <li>Corações fechados para o Espírito Santo</li>
-		    </ul>
-		
-		    <p>Estratégia:</p>
-		    <ul class="record-list">
-		        <li>Disposição</li>
-		        <li>Prudência</li>
-		        <li>Momento de cura – Reunião de oração</li>
-		        <li>Oração União Servos (online), ex.: Santo Terço</li>
-		    </ul>
-		
-		    <p>Confirmação:</p>
-		    <ul class="record-list">
-		        <li>Música: Eis-me aqui</li>
-		        <li>Salmo 90 (Confiança)</li>
-		        <li>Discernimento</li>
-		        <li>Perseverança</li>
-		    </ul>
-		</ul>
-
-		    
-		<ul class="records-list">
-		    <p class="record-date">11 de fevereiro de 2025</p>
-		    <p class="record-description">Condutor: Ana Cristina</p>
-		    
-		    <p>Intenções:</p>
-		    <ul class="record-list">
-		        <li>Indecisão</li>
-		        <li>Desapego do mundo</li>
-		        <li>Confiança</li>
-		        <li>"Quem crê em mim, do seu interior jorrarão rios de água viva" - João 7, 38</li>
-		    </ul>
-		
-		    <p>Estratégia:</p>
-		    <ul class="record-list">
-		        <li>"Escolher a melhor parte"</li>
-		        <li>Santo Terço Doloroso</li>
-		        <li>"Não tenhais medo, pois eu estou contigo"</li>
-		    </ul>
-		
-		    <p>Confirmação:</p>
-		    <ul class="record-list">
-		        <li>Música: Eu não nasci para esse mundo - Frei Gilson</li>
-		        <li>1 Tessalonicenses 5, 17 - Orai sem cessar</li>
-		        <li>Mateus 7, 24 - Edificar a casa sobre a rocha</li>
-		    </ul>
-		</ul>
-
-		    
-		    <ul class="records-list">
-		    <p class="record-date">04 de fevereiro de 2025</p>
-		    <p class="record-description">Condutor: Gilvana</p>
-		    <p>Pelo que rezar:</p>
-		    <ul class="record-list">
-		        <li>Perdão dos pecados; Romanos 6, 14</li>
-		        <li>Despertar</li>
-		        <li>Salmos 120 (Deus guarda seu povo)</li>
-		        <li>Tiago 2, 5 (Escolhidos)</li>
-		    </ul>
-		
-		    <p>Discernimento:</p>
-		    <ul class="record-list">
-		        <li>Perdão dos pecados</li>
-		    </ul>
-		
-		    <p>Estratégia:</p>
-		    <ul class="record-list">
-		        <li>Via Sacra</li>
-		        <li>Amor</li>
-		        <li>Sabedoria</li>
-		        <li>Oração do perdão</li>
-		    </ul>
-		
-		    <p>Confirmação:</p>
-		    <ul class="record-list">
-		        <li>Perseverança</li>
-		        <li>Todo aquele que crê, vem de Deus, pois ele é amor</li>
-		        <li>Êxodo 3, 14</li>
-		        <li>Colossenses 2, 3</li>
-		    </ul>
-		</ul>
-
-		    
-		    <ul class="records-list">
-		    <p class="record-date">28 de janeiro de 2025</p>
-		    <p class="record-description">Condutor: Gabriel</p>
-		    <p>Pelo que rezar:</p>
-		    <ul class="record-list">
-		        <li>Recomeço</li>
-		        <li>Mateus 26, 41</li>
-		        <li>Visualização lança Passando coração de uma Pessoa</li>
-		        <li>Frieza espiritual, Egoísmo</li>
-		    </ul>
-		
-		    <p>Discernimento:</p>
-		    <ul class="record-list">
-		        <li>Recomeço em Cristo</li>
-		    </ul>
-		
-		    <p>Estratégia:</p>
-		    <ul class="record-list">
-		        <li>Vida de Oração</li>
-		        <li>Cultivar a amizade com Jesus</li>
-		        <li>Fé (ver para crer)</li>
-		    </ul>
-		
-		    <p>Confirmação:</p>
-		    <ul class="record-list">
-		        <li>Colossenses 2, 1-5</li>
-		        <li>Salmos 124</li>
-		        <li>Mateus 5, 8</li>
-		    </ul>
-		</ul>
-
                 <ul class="records-list">
-                    <p class="record-date">21 de janeiro de 2025</p>
-                    <p class="record-description">Condutora: Ana Cristina</p>
+                    <p class="record-date">18 de fevereiro de 2025</p>
+                    <p class="record-description">Condutor: Gabriel</p>
+                
                     <p>Pelo que rezar:</p>
                     <ul class="record-list">
-                        <li>Mateus 14, confiança em Deus</li>
-                        <li>Mateus 9, 37 - Rezai por mais servos</li>
-                        <li>Desentendimento, aflição, discernimento dos servos</li>
+                        <li>Visualização: fogo do Espírito Santo que não consegue entrar</li>
+                        <li>João 15 (A videira)</li>
+                        <li>Mateus 24, 35</li>
+                        <li>Santidade</li>
+                    </ul>
+                
+                    <p>Discernimento:</p>
+                    <ul class="record-list">
+                        <li>Corações fechados para o Espírito Santo</li>
                     </ul>
                 
                     <p>Estratégia:</p>
                     <ul class="record-list">
-                        <li>Jejum e oração</li>
-                        <li>Entrega total e união</li>
-                        <li>Contrição</li>
+                        <li>Disposição</li>
+                        <li>Prudência</li>
+                        <li>Momento de cura – Reunião de oração</li>
+                        <li>Oração União Servos (online), ex.: Santo Terço</li>
                     </ul>
                 
                     <p>Confirmação:</p>
                     <ul class="record-list">
-                        <li>Mateus 4, 19</li>
-                        <li>Unidade, João 10, 15</li>
-                        <li>Paz</li>
+                        <li>Música: Eis-me aqui</li>
+                        <li>Salmo 90 (Confiança)</li>
+                        <li>Discernimento</li>
+                        <li>Perseverança</li>
                     </ul>
                 </ul>
-                
-
+               
                 <ul class="records-list">
-					<p class="record-date">14 de janeiro de 2025</p>
-					<p class="record-description">Condutora: Gilvana</p>
-                    <p>Pelo que rezar:</p>
-                    <ul class="record-list">
-                      <li>Parábola 10 virgens</li>
-                      <li>Fogo Espírito Santo caindo sobre nós</li>
-                      <li>Falta de perseverança</li>
-                    </ul>
+                    <p class="record-date">11 de fevereiro de 2025</p>
+                    <p class="record-description">Condutor: Ana Cristina</p>
                     
+                    <p>Intenções:</p>
+                    <ul class="record-list">
+                        <li>Indecisão</li>
+                        <li>Desapego do mundo</li>
+                        <li>Confiança</li>
+                        <li>"Quem crê em mim, do seu interior jorrarão rios de água viva" - João 7, 38</li>
+                    </ul>
+                
                     <p>Estratégia:</p>
                     <ul class="record-list">
-                      <li>Servir</li>
-                      <li>Oração, fé e caridade</li>
-                      <li>Contemplação - terço</li>
+                        <li>"Escolher a melhor parte"</li>
+                        <li>Santo Terço Doloroso</li>
+                        <li>"Não tenhais medo, pois eu estou contigo"</li>
                     </ul>
-                    
+                
                     <p>Confirmação:</p>
                     <ul class="record-list">
-                      <li>1 João 2 - Testemunho</li>
-                      <li>Prudente e inteligente</li>
-                      <li>Josué 1, 9</li>
+                        <li>Música: Eu não nasci para esse mundo - Frei Gilson</li>
+                        <li>1 Tessalonicenses 5, 17 - Orai sem cessar</li>
+                        <li>Mateus 7, 24 - Edificar a casa sobre a rocha</li>
                     </ul>
-                    
                 </ul>
-            </div>
- <!---Adicionar sempre antes da última div-->
-            <div lass="card">
+                
+                    
+                    <ul class="records-list">
+                    <p class="record-date">04 de fevereiro de 2025</p>
+                    <p class="record-description">Condutor: Gilvana</p>
+                    <p>Pelo que rezar:</p>
+                    <ul class="record-list">
+                        <li>Perdão dos pecados; Romanos 6, 14</li>
+                        <li>Despertar</li>
+                        <li>Salmos 120 (Deus guarda seu povo)</li>
+                        <li>Tiago 2, 5 (Escolhidos)</li>
+                    </ul>
+                
+                    <p>Discernimento:</p>
+                    <ul class="record-list">
+                        <li>Perdão dos pecados</li>
+                    </ul>
+                
+                    <p>Estratégia:</p>
+                    <ul class="record-list">
+                        <li>Via Sacra</li>
+                        <li>Amor</li>
+                        <li>Sabedoria</li>
+                        <li>Oração do perdão</li>
+                    </ul>
+                
+                    <p>Confirmação:</p>
+                    <ul class="record-list">
+                        <li>Perseverança</li>
+                        <li>Todo aquele que crê, vem de Deus, pois ele é amor</li>
+                        <li>Êxodo 3, 14</li>
+                        <li>Colossenses 2, 3</li>
+                    </ul>
+                </ul>
+                
+                    
+                    <ul class="records-list">
+                    <p class="record-date">28 de janeiro de 2025</p>
+                    <p class="record-description">Condutor: Gabriel</p>
+                    <p>Pelo que rezar:</p>
+                    <ul class="record-list">
+                        <li>Recomeço</li>
+                        <li>Mateus 26, 41</li>
+                        <li>Visualização lança Passando coração de uma Pessoa</li>
+                        <li>Frieza espiritual, Egoísmo</li>
+                    </ul>
+                
+                    <p>Discernimento:</p>
+                    <ul class="record-list">
+                        <li>Recomeço em Cristo</li>
+                    </ul>
+                
+                    <p>Estratégia:</p>
+                    <ul class="record-list">
+                        <li>Vida de Oração</li>
+                        <li>Cultivar a amizade com Jesus</li>
+                        <li>Fé (ver para crer)</li>
+                    </ul>
+                
+                    <p>Confirmação:</p>
+                    <ul class="record-list">
+                        <li>Colossenses 2, 1-5</li>
+                        <li>Salmos 124</li>
+                        <li>Mateus 5, 8</li>
+                    </ul>
+                </ul>
+                
+                        <ul class="records-list">
+                            <p class="record-date">21 de janeiro de 2025</p>
+                            <p class="record-description">Condutora: Ana Cristina</p>
+                            <p>Pelo que rezar:</p>
+                            <ul class="record-list">
+                                <li>Mateus 14, confiança em Deus</li>
+                                <li>Mateus 9, 37 - Rezai por mais servos</li>
+                                <li>Desentendimento, aflição, discernimento dos servos</li>
+                            </ul>
+                        
+                            <p>Estratégia:</p>
+                            <ul class="record-list">
+                                <li>Jejum e oração</li>
+                                <li>Entrega total e união</li>
+                                <li>Contrição</li>
+                            </ul>
+                        
+                            <p>Confirmação:</p>
+                            <ul class="record-list">
+                                <li>Mateus 4, 19</li>
+                                <li>Unidade, João 10, 15</li>
+                                <li>Paz</li>
+                            </ul>
+                        </ul>
+                        
+                
+                        <ul class="records-list">
+                            <p class="record-date">14 de janeiro de 2025</p>
+                            <p class="record-description">Condutora: Gilvana</p>
+                            <p>Pelo que rezar:</p>
+                            <ul class="record-list">
+                              <li>Parábola 10 virgens</li>
+                              <li>Fogo Espírito Santo caindo sobre nós</li>
+                              <li>Falta de perseverança</li>
+                            </ul>
+                            
+                            <p>Estratégia:</p>
+                            <ul class="record-list">
+                              <li>Servir</li>
+                              <li>Oração, fé e caridade</li>
+                              <li>Contemplação - terço</li>
+                            </ul>
+                            
+                            <p>Confirmação:</p>
+                            <ul class="record-list">
+                              <li>1 João 2 - Testemunho</li>
+                              <li>Prudente e inteligente</li>
+                              <li>Josué 1, 9</li>
+                            </ul>
+                            
+                        </ul>
+                    </div>
+                <!---Adicionar sempre antes da última div-->
+                    <div lass="card">
+                        <ul class="records-list">
+                                <p class="record-date">09 de janeiro de 2025</p>
+                                <p class="record-description">Condutor: Gabriel</p>
+                
+                                <p class="record-description">Pelo que rezar:</p>
+                                <ul class="record-list">
+                                <li>Visualização & ossos secos sem vida</li>
+                                <li>Ezequiel 37</li>
+                                <li>Mateus 7,24</li>
+                                <li>Rezar por aqueles que estão no pecado</li>
+                                <li>Palavra - tentação, Mateus 27</li>
+                                 </ul>
+                                <p class="record-description">Estratégia</p>
+                                <ul class="record-list">
+                                <li>Oração da Renúncia</li>
+                                <li>Rosário de São Miguel</li>
+                                <li>Acolher</li>
+                                 </ul>
+                
+                                <p class="record-description">Confirmação:</p>
+                                <ul class="record-list">
+                                <li>Diálogo</li>
+                                <li>Confiança e fé</li>
+                                <li>Colocar os pecados em nossas intenções</li>
+                                </ul>
+                        </ul>
+                    </div>
+                <!---Adicionar sempre antes da última div-->
+                    <div>
+                        <ul class="records-list">
+                            <p class="record-date">28 de Novembro de 2024</p>
+                            <p class="record-description">Condutora: Gilvana</p>
+                    
+                            <p class="record-description">Intenções:</p>
+                            <ul class="record-list">
+                                <li>João 15,1</li>
+                                <li>Mateus 7,7</li>
+                                <li>Gálatas 5,17</li>
+                            </ul>
+                            
+                            <p class="record-description">Estratégia:</p>
+                            <ul class="record-list">
+                                <li>Compreensão</li>
+                                <li>Renúncia</li>
+                                <li>Oração de Santa Teresinha</li>
+                            </ul>
+                    
+                            <p class="record-description">Evangelho:</p>
+                            
+                            <p class="record-description">Confirmações:</p>
+                            <ul class="record-list">
+                                <li>Liberdade</li>
+                                <li>Libertação</li>
+                                <li>Amar a Deus sobre todas as coisas</li>
+                            </ul>
+                        </ul>
+                    </div>
+                <!---Adicionar sempre antes da última div-->
+                <div>
                 <ul class="records-list">
-                        <p class="record-date">09 de janeiro de 2025</p>
-						<p class="record-description">Condutor: Gabriel</p>
-
-						<p class="record-description">Pelo que rezar:</p>
-						<ul class="record-list">
-						<li>Visualização & ossos secos sem vida</li>
-						<li>Ezequiel 37</li>
-						<li>Mateus 7,24</li>
-						<li>Rezar por aqueles que estão no pecado</li>
-						<li>Palavra - tentação, Mateus 27</li>
-                         </ul>
-						<p class="record-description">Estratégia</p>
-                        <ul class="record-list">
-						<li>Oração da Renúncia</li>
-						<li>Rosário de São Miguel</li>
-						<li>Acolher</li>
-                         </ul>
-
-						<p class="record-description">Confirmação:</p>
-						<ul class="record-list">
-						<li>Diálogo</li>
-						<li>Confiança e fé</li>
-						<li>Colocar os pecados em nossas intenções</li>
-						</ul>
+                <p class="record-date">14 de novembro de 2024</p>
+                <p class="record-description">Condutor: Gabriel</p>
+                
+                <p class="record-description">Intenções:</p>
+                <ul class="record-list">
+                    <li>João 10,12-15</li>
+                    <li>Desafio</li>
+                    <li>Sejam mansos e humildes de coração</li>
+                    <li>2 Coríntios 10,17</li>
                 </ul>
-            </div>
-<!---Adicionar sempre antes da última div-->
-            <div>
+                
+                <p class="record-description">Estratégia:</p>
+                <ul class="record-list">
+                    <li>Escutar</li>
+                    <li>Escutar, Silenciar e Humildade</li>
+                    <li>Rosário</li>
+                </ul>
+                
+                <p class="record-description">Confirmação:</p>
+                <ul class="record-list">
+                    <li>Abundância</li>
+                    <li>Fé</li>
+                </ul>
+                </ul>
+                </div>
+                <!---Adicionar sempre antes da última div-->
+                <div>
                 <ul class="records-list">
-                    <p class="record-date">28 de Novembro de 2024</p>
-                    <p class="record-description">Condutora: Gilvana</p>
-            
-                    <p class="record-description">Intenções:</p>
-                    <ul class="record-list">
-                        <li>João 15,1</li>
-                        <li>Mateus 7,7</li>
-                        <li>Gálatas 5,17</li>
-                    </ul>
-                    
-                    <p class="record-description">Estratégia:</p>
-                    <ul class="record-list">
-                        <li>Compreensão</li>
-                        <li>Renúncia</li>
-                        <li>Oração de Santa Teresinha</li>
-                    </ul>
-            
-                    <p class="record-description">Evangelho:</p>
-                    
-                    <p class="record-description">Confirmações:</p>
-                    <ul class="record-list">
-                        <li>Liberdade</li>
-                        <li>Libertação</li>
-                        <li>Amar a Deus sobre todas as coisas</li>
-                    </ul>
+                <p class="record-date">07 de novembro de 2024</p>
+                <p class="record-description">Condutora: Ana Cristina</p>
+                
+                <p class="record-description">Intenções:</p>
+                <ul class="record-list">
+                    <li>Palavra</li>
+                    <li>Não se preocupe, eu o Senhor te levantarei</li>
+                    <li>Forte apelo pelos doentes físicos e espirituais</li>
+                    <li>Mateus 7,16</li>
+                    <li>Rezar pelos servos</li>
                 </ul>
-            </div>
-<!---Adicionar sempre antes da última div-->
-<div>
-    <ul class="records-list">
-        <p class="record-date">14 de novembro de 2024</p>
-        <p class="record-description">Condutor: Gabriel</p>
-
-        <p class="record-description">Intenções:</p>
-        <ul class="record-list">
-            <li>João 10,12-15</li>
-            <li>Desafio</li>
-            <li>Sejam mansos e humildes de coração</li>
-            <li>2 Coríntios 10,17</li>
-        </ul>
-        
-        <p class="record-description">Estratégia:</p>
-        <ul class="record-list">
-            <li>Escutar</li>
-            <li>Escutar, Silenciar e Humildade</li>
-            <li>Rosário</li>
-        </ul>
-
-        <p class="record-description">Confirmação:</p>
-        <ul class="record-list">
-            <li>Abundância</li>
-            <li>Fé</li>
-        </ul>
-    </ul>
-</div>
-<!---Adicionar sempre antes da última div-->
-<div>
-    <ul class="records-list">
-        <p class="record-date">07 de novembro de 2024</p>
-        <p class="record-description">Condutora: Ana Cristina</p>
-
-        <p class="record-description">Intenções:</p>
-        <ul class="record-list">
-            <li>Palavra</li>
-            <li>Não se preocupe, eu o Senhor te levantarei</li>
-            <li>Forte apelo pelos doentes físicos e espirituais</li>
-            <li>Mateus 7,16</li>
-            <li>Rezar pelos servos</li>
-        </ul>
-        
-        <p class="record-description">Estratégia:</p>
-        <ul class="record-list">
-            <li>Efésios 6,10-17</li>
-            <li>Oração de São Miguel</li>
-            <li>Oração de Quebra de Maldição</li>
-            <li>Bons Exemplos dos Servos</li>
-            <li>Oração do Santo Terço</li>
-        </ul>
-
-        <p class="record-description">Confirmação:</p>
-        <ul class="record-list">
-            <li>Renúncia</li>
-            <li>João 10,10</li>
-        </ul>
-    </ul>
-</div>
-<!---Adicionar sempre antes da última div-->
-<div>
-    <ul class="records-list">
-        <p class="record-date">31 de outubro de 2024</p>
-        <p class="record-description">Intercessão</p>
-        <p class="record-description">Condutor: Gabriel</p>
-
-        <p class="record-description">Intenção:</p>
-        <ul class="record-list">
-            <li>Combate espiritual</li>
-            <li>A visualização de galhos secos e que no nosso grupo há muito coração de pedra</li>
-            <li>Libertação</li>
-        </ul>
-        
-        <p class="record-description">Estratégia:</p>
-        <ul class="record-list">
-            <li>Rosário</li>
-            <li>Confissão</li>
-            <li>Práticas espirituais (leitura da palavra)</li>
-            <li>Terço da Libertação</li>
-            <li>Oração da Renúncia</li>
-        </ul>
-
-        <p class="record-description">Confirmação:</p>
-        <ul class="record-list">
-            <li>Cura</li>
-            <li>Perseverança</li>
-            <li>Confiança</li>
-        </ul>
-    </ul>
-</div>
-<!---Adicionar sempre antes da última div-->
-<div>
-    <ul class="records-list">
-        <p class="record-date">24 de outubro de 2024</p>
-        <p class="record-description">Condutora: Gilvana</p>
-
-        <p class="record-description">Intenções:</p>
-        <ul class="record-list">
-            <li>João 3,16</li>
-            <li>João 4,13</li>
-            <li>Renovação</li>
-            <li>João 3,5</li>
-        </ul>
-        
-        <p class="record-description">Estratégia:</p>
-        <ul class="record-list">
-            <li>Se sacrificar para amar os irmãos, principalmente quem tem dificuldade de amar!</li>
-            <li>Prosperar</li>
-            <li>Silenciar e escutar mais, o que o Senhor tem a nos falar</li>
-            <li>Unidade e oração entre os servos</li>
-        </ul>
-    </ul>
-</div>
-<!---Adicionar sempre antes da última div-->
-		<div>
-    </section>
-
- 
- 
-        
- 
+                
+                <p class="record-description">Estratégia:</p>
+                <ul class="record-list">
+                    <li>Efésios 6,10-17</li>
+                    <li>Oração de São Miguel</li>
+                    <li>Oração de Quebra de Maldição</li>
+                    <li>Bons Exemplos dos Servos</li>
+                    <li>Oração do Santo Terço</li>
+                </ul>
+                
+                <p class="record-description">Confirmação:</p>
+                <ul class="record-list">
+                    <li>Renúncia</li>
+                    <li>João 10,10</li>
+                </ul>
+                </ul>
+                </div>
+                <!---Adicionar sempre antes da última div-->
+                <div>
+                <ul class="records-list">
+                <p class="record-date">31 de outubro de 2024</p>
+                <p class="record-description">Intercessão</p>
+                <p class="record-description">Condutor: Gabriel</p>
+                
+                <p class="record-description">Intenção:</p>
+                <ul class="record-list">
+                    <li>Combate espiritual</li>
+                    <li>A visualização de galhos secos e que no nosso grupo há muito coração de pedra</li>
+                    <li>Libertação</li>
+                </ul>
+                
+                <p class="record-description">Estratégia:</p>
+                <ul class="record-list">
+                    <li>Rosário</li>
+                    <li>Confissão</li>
+                    <li>Práticas espirituais (leitura da palavra)</li>
+                    <li>Terço da Libertação</li>
+                    <li>Oração da Renúncia</li>
+                </ul>
+                
+                <p class="record-description">Confirmação:</p>
+                <ul class="record-list">
+                    <li>Cura</li>
+                    <li>Perseverança</li>
+                    <li>Confiança</li>
+                </ul>
+                </ul>
+                </div>
+                <!---Adicionar sempre antes da última div-->
+                <div>
+                <ul class="records-list">
+                <p class="record-date">24 de outubro de 2024</p>
+                <p class="record-description">Condutora: Gilvana</p>
+                
+                <p class="record-description">Intenções:</p>
+                <ul class="record-list">
+                    <li>João 3,16</li>
+                    <li>João 4,13</li>
+                    <li>Renovação</li>
+                    <li>João 3,5</li>
+                </ul>
+                
+                <p class="record-description">Estratégia:</p>
+                <ul class="record-list">
+                    <li>Se sacrificar para amar os irmãos, principalmente quem tem dificuldade de amar!</li>
+                    <li>Prosperar</li>
+                    <li>Silenciar e escutar mais, o que o Senhor tem a nos falar</li>
+                    <li>Unidade e oração entre os servos</li>
+                </ul>
+                </ul>
+                </div>
+                <!---Adicionar sempre antes da última div-->
+                <div>
+                </section>
 
     <footer>
-        <p>&copy; 2025 Ministério de Intercessão - Filhos da Luz. Todos os direitos reservados.</p>
+        <p>&copy; 2025 Ministério de Intercessão - GO Filhos da Luz. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
