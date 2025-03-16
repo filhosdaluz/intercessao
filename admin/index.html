@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Administração do Site</title>
-    <script src="https://unpkg.com/netlify-cms-app@2.15.0/dist/netlify-cms-app.js"></script>
+    <!-- Adicionando o script do Netlify CMS primeiro -->
+    <script src="https://cdn.jsdelivr.net/npm/netlify-cms-app@2.15.0/dist/netlify-cms-app.js"></script>
   </head>
   <body>
+    <!-- Adicionando um "DOMContentLoaded" para garantir que o CMS seja carregado antes de ser inicializado -->
     <script>
-      CMS.init();
+      document.addEventListener('DOMContentLoaded', function() {
+        CMS.init();
+      });
     </script>
   </body>
 </html>
