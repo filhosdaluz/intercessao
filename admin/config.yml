@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: filhosdaluz/intercessão  # Substitua com seu nome de usuário no GitHub e o nome do seu repositório
+  repo: filhosdaluz/intercessao  # Substitua com seu nome de usuário no GitHub e o nome do seu repositório
   branch: main  # Ou "master", dependendo do seu repositório
 
 media_folder: "images/uploads" # Pasta para armazenar imagens
