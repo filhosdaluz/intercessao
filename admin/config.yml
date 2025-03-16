@@ -1,15 +1,15 @@
 backend:
   name: github
-  repo: filhosdaluz/intercessao  # Substitua com seu nome de usuário no GitHub e o nome do seu repositório
+  repo: filhosdaluz/intercessao  # Substitua com seu nome de usuário e repositório
   branch: main  # Ou "master", dependendo do seu repositório
 
-media_folder: "images/uploads" # Pasta para armazenar imagens
-public_folder: "/images/uploads" # Caminho público para acessar as imagens
+media_folder: "images/uploads"  # Pasta onde as imagens serão armazenadas
+public_folder: "/images/uploads"  # URL pública para as imagens
 
 collections:
   - name: "posts"  # Nome da coleção
     label: "Postagens"
-    folder: "content/posts"  # Caminho onde os arquivos de conteúdo (Markdown) são armazenados
+    folder: "content/posts"  # Pasta onde os arquivos Markdown são armazenados
     create: true  # Permite criar novos posts
     fields:
       - { label: "Título", name: "title", widget: "string" }
