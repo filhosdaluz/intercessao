@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Administração do Site</title>
-
-    <!-- Carregar o script do Netlify CMS antes do script de inicialização -->
-     <script src="https://cdn.jsdelivr.net/npm/netlify-cms-app@2.15.0/dist/netlify-cms-app.js"></script>
-  </head>
-  <body>
-    <!-- Adicionando a inicialização do CMS após o carregamento do DOM -->
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        CMS.init();
-      });
-    </script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Administração do Site</title>
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/netlify-cms-app@2.15.0/dist/netlify-cms-app.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      CMS.init();  // Inicializando o CMS após a página estar completamente carregada
+    });
+  </script>
+</body>
 </html>
